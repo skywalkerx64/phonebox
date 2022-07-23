@@ -1,0 +1,225 @@
+/*----------------------------- section des slides-------------------------------  */
+.slider_zone{
+    background-color: #9AD4E2 ;
+    padding: 5vh 0;
+}
+.slider{
+    width: 912px ;
+    margin: auto;
+    overflow: hidden;
+}
+.slides_player{
+    width: calc(912px *3);
+    animation: slider_animation_go 10s infinite alternate-reverse;
+}
+@keyframes slider_animation_go {
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-912px);
+    }
+    43%{
+        transform: translateX(-912px);
+    }
+    66%{
+        transform: translateX(-1824px);
+    }
+    100%{
+        transform: translateX(-1824px);
+    }
+    
+}
+
+.slide{
+    width: 912px;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.slide_img{
+    height: 50vh;
+    background-image: url(../img/slide1.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+.slide_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    font-size: large;
+}
+.slide_text p:first-of-type{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.slide_text a{
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    background-color: #3E3E3E;
+    color: white;
+    border-radius: 25px;
+}
+/*--------------------- section des catégoires ----------------------*/
+.categoires{
+    padding: 10vh 0;
+}
+.categoires main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+}
+.categoires_elements a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    padding: 15vh 0;
+}
+.CE1{
+    background:  linear-gradient(rgba(0,0,0,0.5) 0 0) ,url(../img/iphone_categorie.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.CE2{
+    background:  linear-gradient(rgba(0,0,0,0.5) 0 0) ,url(../img/Samsung_categorie.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.CE3{
+    background:  linear-gradient(rgba(0,0,0,0.5) 0 0) ,url(../img/LG_categorie.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*-------------------- section des meilleur articles----------------------------- */
+.section_title h3{
+    font-weight: 600;
+    padding-bottom: 1rem ;
+}
+.M_Ventes{
+    padding-bottom: 10vh;
+}
+.M_Ventes_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.M_article_img{
+    
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.M_article_img button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.M_article_img div{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.M_article_img div img{
+    width: 100%;
+}
+.M_article_img a{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 2;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: red;
+    padding: 0.2rem 0.5rem;
+    border-radius: 25px;
+}
+.M_article_text{
+    background-color: #3E3E3E;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.M_article_text a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+.M_article_text div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding: 0 0.5rem;
+}
+.M_article_text div a{
+    display: block;
+    font-size: small;
+    padding: 0.5rem 1rem;
+    background: #9AD4E2;
+    border-radius: 10px;
+    display:flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/*------------------------ section des TENDANCES -------------------*/
+.T_articles{
+    background: #F2F2F2;
+    padding: 3rem;
+}
+.T_articles_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+.T_articles_container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.T_articles_element .M_article_text{
+    text-align: left;
+}
+.T_articles_element .M_article_text>a{
+    padding: 0 1rem;
+}
+.T_articles_element .M_article_img{
+    padding-bottom: 35rem;
+}
+
+/*----------------------- section des garanties **********************/
+.garanties{
+    background-color: #9AD4E2 ;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+}
+.garanties_element img{
+    width: 5rem;
+}
